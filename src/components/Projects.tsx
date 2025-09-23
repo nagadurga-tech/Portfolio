@@ -1,27 +1,27 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
-import jt from "../components/jobtraker.png";
 import { motion } from "framer-motion";
-import quiz from './quiz.png';
-import youtube from './yuotubeclone.png';
-import ecommerce from './ecommerce.png';
+import jt from "../assets/jobtraker.png";
+import quiz from '../assets/quiz.png';
+import youtube from '../assets/yuotubeclone.png';
+import ecommerce from '../assets/Ecommerce.png';
+import jobtracker from '../assets/fitness.jpeg';
+import recipe from '../assets/recipe.png';
 
 const Projects: React.FC = () => {
   const projects = [
     {
       title: "Recipe Hub",
-      image:
-        "https://cdn.dribbble.com/users/2742725/screenshots/16571028/media/253cb15127369c1fc867127768219326.png?format=webp&resize=1440x&vertical=center",
+      image:recipe,
       live: "https://recipe-hub-b2kl.vercel.app/",
       code: "https://github.com/nagadurga-tech/RecipeHub",
     },
-     {
+    {
       title: "E-Commerce Store",
       image:ecommerce,
-      live: "shopin-e-commerce-jdmyyyd7l-nagadurga-techs-projects.vercel.app",
+      live: "https://shopin-e-commerce.vercel.app/",
       code: "https://github.com/nagadurga-tech/SHOPIN-ECommerce",
     },
-  
     {
       title: "VidTube Video Explorer",
       image: youtube,
@@ -30,8 +30,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Fitness Tracker",
-      image:
-        "https://img.freepik.com/premium-vector/website-template-isometric-landing-page-concept-fitness-apps-athletes-cycling-running-people-using-fitness-tracker-easy-edit-customize_130740-5577.jpg",
+      image: jobtracker,
       live: "https://fitness-tracker-eosin-six.vercel.app/",
       code: "https://github.com/nagadurga-tech/Fitness-tracker-",
     },

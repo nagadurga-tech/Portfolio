@@ -1,5 +1,5 @@
 import React from "react";
-import myPhoto from "../components/image.png";
+import myPhoto from "../assets/image.png";
 
 const Hero: React.FC = () => {
   const scrollToProjects = () => {
