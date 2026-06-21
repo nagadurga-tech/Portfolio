@@ -10,46 +10,46 @@ const Achievements: React.FC<AchievementsProps> = ({ isVisible }) => {
   const [counters, setCounters] = useState({ days: 0, projects: 0, skills: 0 });
 
   const achievements = [
-    {
-      icon: Trophy,
-      title: "90-Day Frontend Challenge",
-      description: "Completed",
-      count: 90,
-      suffix: "Days",
-      color: "from-yellow-500 to-orange-500",
-      bgColor: "from-yellow-500/10 to-orange-500/10",
-      detail: "Intensive coding bootcamp",
-    },
-    {
-      icon: Target,
-      title: "Real-world Projects",
-      description: "Built",
-      count: 50,
-      suffix: "Projects",
-      color: "from-green-500 to-emerald-500",
-      bgColor: "from-green-500/10 to-emerald-500/10",
-      detail: "Production-ready apps",
-    },
-    {
-      icon: Star,
-      title: "React & Tailwind",
-      description: "Specialist",
-      count: 100,
-      suffix: "%",
-      color: "from-blue-500 to-purple-500",
-      bgColor: "from-blue-500/10 to-purple-500/10",
-      detail: "Modern frontend mastery",
-    },
-  ];
+  {
+    icon: Trophy,
+    title: "MERN Stack Development",
+    description: "Learning Journey",
+    count: 90,
+    suffix: "Days",
+    color: "from-yellow-500 to-orange-500",
+    bgColor: "from-yellow-500/10 to-orange-500/10",
+    detail: "Completed 90-Day Frontend Development Challenge",
+  },
+  {
+    icon: Target,
+    title: "Full Stack Projects",
+    description: "Built",
+    count: 20,
+    suffix: "+",
+    color: "from-green-500 to-emerald-500",
+    bgColor: "from-green-500/10 to-emerald-500/10",
+    detail: "React, Firebase, MongoDB & AI Applications",
+  },
+  {
+    icon: Star,
+    title: "Technical Skills",
+    description: "Mastered",
+    count: 8,
+    suffix: "+",
+    color: "from-blue-500 to-purple-500",
+    bgColor: "from-blue-500/10 to-purple-500/10",
+    detail: "Java, React, Redux, Firebase, MongoDB, Express, Git, REST APIs",
+  },
+];
 
   // Counter animation
   useEffect(() => {
     if (isVisible) {
       const timer = setInterval(() => {
         setCounters((prev) => ({
-          days: prev.days < 90 ? prev.days + 3 : 90,
-          projects: prev.projects < 50 ? prev.projects + 2 : 50,
-          skills: prev.skills < 100 ? prev.skills + 4 : 100,
+            days: prev.days < 90 ? prev.days + 3 : 90,
+            projects: prev.projects < 20 ? prev.projects + 1 : 20,
+            skills: prev.skills < 8 ? prev.skills + 1 : 8,
         }));
       }, 40);
       return () => clearInterval(timer);
@@ -78,17 +78,14 @@ const Achievements: React.FC<AchievementsProps> = ({ isVisible }) => {
     <div className="flex-1 max-w-[60px] h-0.5 bg-gradient-to-r from-yellow-500 to-transparent"></div>
     
     <span className="text-yellow-400 font-semibold tracking-wider uppercase text-sm md:text-base">
-      My Journey
+      Professional Growth
     </span>
     
     <div className="flex-1 max-w-[60px] h-0.5 bg-gradient-to-l from-yellow-500 to-transparent"></div>
   </div>
 
-
-
         <div className="text-center mb-16">
           
-
           {/* Animated Gradient Headline */}
           <motion.h2
             className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-yellow-400 via-pink-500 to-orange-400 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient mt-3"

@@ -50,16 +50,16 @@ const About: React.FC<AboutProps> = ({ isVisible }) => {
         let yearCount = 0;
         const yearInterval = setInterval(() => {
           yearCount++;
-          if (yearCount <= 2) setYears(yearCount);
+          if (yearCount <= 3) setYears(yearCount);
           else clearInterval(yearInterval);
         }, 600);
 
         let projectCount = 0;
         const projectInterval = setInterval(() => {
           projectCount += 2;
-          if (projectCount <= 50) setProjects(projectCount);
+          if (projectCount <= 15) setProjects(projectCount);
           else {
-            setProjects(50);
+            setProjects(15);
             clearInterval(projectInterval);
           }
         }, 40);
@@ -160,26 +160,22 @@ const About: React.FC<AboutProps> = ({ isVisible }) => {
             className="space-y-10 text-center lg:text-left"
           >
             <p className="text-lg text-slate-300 leading-relaxed font-light max-w-xl mx-auto lg:mx-0">
-              I craft{" "}
-              <span className="text-blue-400 font-semibold">
-                responsive, interactive websites
-              </span>{" "}
-              with{" "}
-              <span className="text-purple-400 font-semibold">clean design</span>{" "}
-              and{" "}
-              <span className="text-pink-400 font-semibold">
-                smooth user experience
-              </span>
-              . Always focused on{" "}
-              <span className="text-blue-400 font-semibold">
-                modern technologies
-              </span>{" "}
-              and{" "}
-              <span className="text-purple-400 font-semibold">
-                creative solutions
-              </span>
-              .
-            </p>
+  I specialize in building{" "}
+  <span className="text-blue-400 font-semibold">
+    modern, responsive web applications
+  </span>{" "}
+  using React.js, JavaScript, Firebase, and MERN technologies.
+  Passionate about solving real-world problems through technology and creating{" "}
+  <span className="text-purple-400 font-semibold">
+    user-friendly digital experiences
+  </span>
+  .
+  Continuously learning new technologies and exploring{" "}
+  <span className="text-pink-400 font-semibold">
+    AI-powered solutions
+  </span>{" "}
+  to improve my skills and build impactful projects.
+</p>
 
             {/* 3D Stats Section */}
             <div className="grid grid-cols-2 gap-6 max-w-md mx-auto lg:mx-0 perspective-1000">
@@ -193,7 +189,7 @@ const About: React.FC<AboutProps> = ({ isVisible }) => {
                   {years}+
                 </div>
                 <div className="relative z-10 text-slate-400 text-sm md:text-base">
-                  Years Experience
+                   Technologies Mastered
                 </div>
               </motion.div>
 
@@ -207,7 +203,7 @@ const About: React.FC<AboutProps> = ({ isVisible }) => {
                   {projects}+
                 </div>
                 <div className="relative z-10 text-slate-400 text-sm md:text-base">
-                  Projects Completed
+                    Real Projects Built
                 </div>
               </motion.div>
             </div>

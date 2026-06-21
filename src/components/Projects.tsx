@@ -1,7 +1,7 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { motion } from "framer-motion";
-import jt from "../assets/jobtraker.png";
+import ai from "../assets/Ai ResumeBuilder.png";
 import quiz from '../assets/quiz.png';
 import youtube from '../assets/yuotubeclone.png';
 import ecommerce from '../assets/Ecommerce.png';
@@ -10,6 +10,12 @@ import recipe from '../assets/recipe.png';
 
 const Projects: React.FC = () => {
   const projects = [
+    {
+      title: "Ai ResumeBuilder",
+      image: ai,
+      live: "https://resume-builder-code.vercel.app/",
+      code: "https://github.com/nagadurga-tech/Resume-Builder-",
+    },
     {
       title: "Recipe Hub",
       image:recipe,
@@ -40,12 +46,7 @@ const Projects: React.FC = () => {
       live: "quiz-master-4xjxc868f-nagadurga-techs-projects.vercel.app",
       code: "https://github.com/nagadurga-tech/QuizMaster",
     },
-      {
-      title: "Job Tracker Dashboard",
-      image: jt,
-      live: "https://jobtracker-dashboard-n163dbbqt-nagadurga-techs-projects.vercel.app/",
-      code: "https://github.com/nagadurga-tech/Jobtracker-Dashboard-",
-    },
+      
    
   ];
 

@@ -1,6 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Palette, Globe, Zap, GitBranch, Smartphone, Layers } from 'lucide-react';
+import {
+  Code,
+  Globe,
+  Zap,
+  GitBranch,
+  Layers,
+  Database,
+  Sparkles
+} from 'lucide-react';
 
 interface SkillsProps {
   isVisible: boolean;
@@ -8,15 +16,15 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ isVisible }) => {
   const skills = [
-    { name: 'Java', icon: Code, level: 85, color: 'from-orange-500 to-red-500' },
-    { name: 'HTML', icon: Globe, level: 95, color: 'from-orange-600 to-red-600' },
-    { name: 'CSS', icon: Palette, level: 90, color: 'from-blue-500 to-cyan-500' },
-    { name: 'JavaScript', icon: Zap, level: 88, color: 'from-yellow-500 to-orange-500' },
-    { name: 'React', icon: Layers, level: 92, color: 'from-cyan-500 to-blue-500' },
-    { name: 'Bootstrap', icon: Smartphone, level: 85, color: 'from-purple-500 to-indigo-500' },
-    { name: 'Tailwind CSS', icon: Palette, level: 90, color: 'from-teal-500 to-cyan-500' },
-    { name: 'Git', icon: GitBranch, level: 80, color: 'from-gray-600 to-gray-800' },
-  ];
+  { name: 'Java', icon: Code, level: 85, color: 'from-orange-500 to-red-500' },
+  { name: 'JavaScript', icon: Zap, level: 90, color: 'from-yellow-500 to-orange-500' },
+  { name: 'React.js', icon: Layers, level: 92, color: 'from-cyan-500 to-blue-500' },
+  { name: 'Node.js', icon: Globe, level: 85, color: 'from-green-500 to-emerald-500' },
+  { name: 'Express.js', icon: Code, level: 82, color: 'from-gray-500 to-slate-700' },
+  { name: 'MongoDB', icon: Database, level: 85, color: 'from-green-600 to-lime-500' },
+  { name: 'Git/GitHub', icon: GitBranch, level: 85, color: 'from-orange-500 to-red-500' },
+  { name: 'AI Tools', icon: Sparkles, level: 88, color: 'from-purple-500 to-pink-500' },
+];
 
   return (
     <section
@@ -110,7 +118,16 @@ const Skills: React.FC<SkillsProps> = ({ isVisible }) => {
             Tools & Technologies I Use
           </h3>
           <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-            {['VS Code', 'GitHub', 'npm', 'Notion'].map((tool, index) => (
+            {[
+               'VS Code',
+               'GitHub',
+               'MongoDB Atlas',
+               'Postman',
+              'Firebase',
+              'OpenAI API',
+              'Vercel',
+              'Render'
+].map((tool, index) => (
               <motion.span
                 key={tool}
                 initial={{ opacity: 0, y: 20 }}
